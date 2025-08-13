@@ -35,6 +35,7 @@ namespace CppCLRWinFormsProject {
 			}
 		}
 	private: System::Windows::Forms::TableLayoutPanel^ boardTableLayoutPanel;
+	private: System::Windows::Forms::Button^ button1;
 	protected:
 
 	protected:
@@ -53,6 +54,7 @@ namespace CppCLRWinFormsProject {
 		void InitializeComponent(void)
 		{
 			this->boardTableLayoutPanel = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// boardTableLayoutPanel
@@ -94,13 +96,23 @@ namespace CppCLRWinFormsProject {
 			this->boardTableLayoutPanel->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
 				12.5F)));
 			this->boardTableLayoutPanel->Size = System::Drawing::Size(908, 879);
-			this->boardTableLayoutPanel->TabIndex = 0;
+			this->boardTableLayoutPanel->TabIndex = 1;
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(-100, -100);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"button1";
+			this->button1->UseVisualStyleBackColor = true;
 			// 
 			// Board
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(978, 944);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->boardTableLayoutPanel);
 			this->Name = L"Board";
 			this->Text = L"Reversi";

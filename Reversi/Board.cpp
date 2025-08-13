@@ -12,6 +12,7 @@ System::Void CppCLRWinFormsProject::Board::OnBoardLoad(System::Object^ sender, S
 			button->Dock = System::Windows::Forms::DockStyle::Fill;
 			button->BackColor = System::Drawing::Color::LightGray;
 			button->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			button->TabStop = false;
 			boardTableLayoutPanel->Controls->Add(button, j, i);
 		}
 	}
