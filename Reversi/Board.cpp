@@ -2,7 +2,7 @@
 #include "Board.h"
 // #include "Board.h"
 
-System::Void CppCLRWinFormsProject::Board::OnBoardLoad(System::Object^ sender, System::EventArgs^ e)
+System::Void Reversi::Board::OnBoardLoad(System::Object^ sender, System::EventArgs^ e)
 {
 	for (int i = 0; i < 8; ++i)
 	{

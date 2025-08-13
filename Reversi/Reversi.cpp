@@ -16,6 +16,6 @@ int main()
 {
   Application::EnableVisualStyles();
   Application::SetCompatibleTextRenderingDefault(false);
-  Application::Run(gcnew CppCLRWinFormsProject::Board());
+  Application::Run(gcnew Reversi::Board());
   return 0;
 }
