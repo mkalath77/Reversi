@@ -133,11 +133,13 @@
     <ClInclude Include="Board.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CircularButton.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="CircularButton.cpp" />
     <ClCompile Include="Reversi.cpp" />
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="pch.cpp">

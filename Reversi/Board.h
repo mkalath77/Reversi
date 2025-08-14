@@ -44,7 +44,7 @@ namespace Reversi {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -121,7 +121,7 @@ namespace Reversi {
 
 		}
 #pragma endregion
-		private:
-			System::Void OnBoardLoad(System::Object^ sender, System::EventArgs^ e);
+	private:
+		System::Void OnBoardLoad(System::Object^ sender, System::EventArgs^ e);
 	};
 }
