@@ -59,6 +59,7 @@ namespace Reversi {
 			// 
 			// boardTableLayoutPanel
 			// 
+			this->boardTableLayoutPanel->BackColor = System::Drawing::Color::DarkGreen;
 			this->boardTableLayoutPanel->ColumnCount = 8;
 			this->boardTableLayoutPanel->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				12.5F)));

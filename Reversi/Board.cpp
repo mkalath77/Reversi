@@ -4,6 +4,7 @@
 
 System::Void Reversi::Board::OnBoardLoad(System::Object^ sender, System::EventArgs^ e)
 {
+	boardTableLayoutPanel->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 	for (int i = 0; i < 8; ++i)
 	{
 		for (int j = 0; j < 8; ++j)
