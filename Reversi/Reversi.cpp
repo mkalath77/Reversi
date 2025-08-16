@@ -7,7 +7,7 @@ using namespace System;
 //    return 0;
 // }
 
-#include "Board.h"
+#include "MainForm.h"
 
 using namespace System::Windows::Forms;
 
@@ -16,6 +16,6 @@ int main()
 {
   Application::EnableVisualStyles();
   Application::SetCompatibleTextRenderingDefault(false);
-  Application::Run(gcnew Reversi::Board());
+  Application::Run(gcnew Reversi::MainForm());
   return 0;
 }

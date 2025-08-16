@@ -12,10 +12,10 @@ namespace Reversi {
 	/// <summary>
 	/// Summary for Form1
 	/// </summary>
-	public ref class Board : public System::Windows::Forms::Form
+	public ref class MainForm : public System::Windows::Forms::Form
 	{
 	public:
-		Board(void)
+		MainForm(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace Reversi {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~Board()
+		~MainForm()
 		{
 			if (components)
 			{
@@ -117,7 +117,7 @@ namespace Reversi {
 			this->Controls->Add(this->boardTableLayoutPanel);
 			this->Name = L"Board";
 			this->Text = L"Reversi";
-			this->Load += gcnew System::EventHandler(this, &Board::OnBoardLoad);
+			this->Load += gcnew System::EventHandler(this, &MainForm::OnBoardLoad);
 			this->ResumeLayout(false);
 
 		}
