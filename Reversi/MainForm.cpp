@@ -1,20 +1,10 @@
 #include "pch.h"
 #include "MainForm.h"
 #include "CircularButton.h"
+#include "Board.h"
 
 System::Void Reversi::MainForm::OnBoardLoad(System::Object^ sender, System::EventArgs^ e)
 {
-	boardTableLayoutPanel->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-	for (int i = 0; i < 8; ++i)
-	{
-		for (int j = 0; j < 8; ++j)
-		{
-			auto button = gcnew CircularButton;
-			button->Dock = System::Windows::Forms::DockStyle::Fill;
-			button->TabStop = false;
-			boardTableLayoutPanel->Controls->Add(button, j, i);
-		}
-	}
-
+	this->Controls->Add(gcnew Reversi::Board());
 	return System::Void();
 }
